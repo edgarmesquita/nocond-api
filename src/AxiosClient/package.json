@@ -1,0 +1,31 @@
+{
+    "name": "@nocond/api-axiosclient",
+    "version": "1.0.0",
+    "description": "NoCond API Axios Client",
+    "author": {
+        "name": "Edgar Mesquita <edgar.rj@gmail.com>"
+    },
+    "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "replace-in-file ./src/index.ts --configFile=config.js && tsc",
+        "link": "npm run build && cd dist && npm link",
+        "refreshVSToken": "vsts-npm-auth -config .npmrc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://suporte0667@dev.azure.com/suporte0667/NoCond/_git/nocond-api"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "moment": "^2.26.0"
+    },
+    "devDependencies": {
+        "@types/axios": "^0.14.0",
+        "@types/moment": "^2.13.0",
+        "replace-in-file": "^6.1.0",
+        "typescript": "^3.9.3"
+    }
+}

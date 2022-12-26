@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nocondapi 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nocondapi
+  template:
+    metadata:
+      labels:
+        app: nocondapi 
+    spec:
+      containers:
+        - name: nocondapi 
+          image: nocond.azurecr.io/nocondapi
+          ports:
+          - containerPort: 80

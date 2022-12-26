@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <AssemblyName>NoCond.Application</AssemblyName>
+        <RootNamespace>NoCond.Application</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="10.0.0" />
+        <PackageReference Include="eQuantic.Core.Data" Version="2.1.0.2" />
+        <PackageReference Include="FluentValidation" Version="8.6.2" />
+        <PackageReference Include="Lamar" Version="4.3.1" />
+        <PackageReference Include="System.Data.SqlClient" Version="4.3.1" />
+        <PackageReference Include="Tubular.ServerSide" Version="2.2.0" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <AssemblyName>NoCond.Persistence</AssemblyName>
+        <RootNamespace>NoCond.Persistence</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="eQuantic.Core.Data.EntityFramework" Version="2.1.0.1" />
+        <PackageReference Include="Lamar" Version="4.3.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite" Version="3.1.6" />
+        <PackageReference Include="System.ComponentModel" Version="4.3.0" />
+        <PackageReference Include="System.Linq" Version="4.3.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Application\Application.csproj" />
+    </ItemGroup>
+</Project>
